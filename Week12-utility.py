@@ -9,7 +9,7 @@ def hello_world():
 hello_world()
 
 
-def LoadFile(filename):
+def loadfile(filename):
 
     filename = open(str(input('File')), 'r')
     lines = filename.readlines()
@@ -17,7 +17,7 @@ def LoadFile(filename):
     print('OUTPUT', txt_list)
 
 
-LoadFile('')
+loadfile('')
 
 
 def UpdateString(string,letter,num):
@@ -26,6 +26,29 @@ def UpdateString(string,letter,num):
     print(string_list)
 
 
-UpdateString('Hello World', 'B', 9)
+def FindWordCount(word_list, a):
+    d = {}
+    word_list = []
+    a = str(input('WORD>'))
+    with open('sample_file.txt', 'r') as f:
+        for line in f:
+            for word in line.split():
+                word_list.append(word)
+        for word in word_list:
+            if word not in d:
+                d[word] = 0
+            d[word] += 1
+    print(d)
+
+FindWordCount('','')
+
+
+
+
+
+
+
+
+
 
 
