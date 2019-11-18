@@ -18,3 +18,14 @@ def LoadFile(filename):
 
 
 LoadFile('')
+
+
+def UpdateString(string,letter,num):
+    string_list = list(string)
+    string_list[num] = letter
+    print(string_list)
+
+
+UpdateString('Hello World', 'B', 9)
+
+
