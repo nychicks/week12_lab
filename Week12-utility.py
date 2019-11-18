@@ -7,3 +7,14 @@ def hello_world():
 
 
 hello_world()
+
+
+def LoadFile(filename):
+
+    filename = open(str(input('File')), 'r')
+    lines = filename.readlines()
+    txt_list = [lines]
+    print('OUTPUT', txt_list)
+
+
+LoadFile('')
