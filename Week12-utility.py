@@ -37,8 +37,23 @@ def FindWordCount(word_list, word_to_find):
 
 
 
-a = str(input('Word>'))
-FindWordCount('', a)
+# a = str(input('Word>'))
+# FindWordCount('', a)
+
+def scorefinder(list1,list2,string):
+    print(list1,list2,string)
+
+scorefinder(['mike','jill','amy'], [2,3,4,4,5,5], '')
+
+
+def union(list1,list2):
+    union_list = list1 + list2
+    return union_list
+
+list1 = [5,8,10,6,4]
+list2 = ['Melvin','Martian','Baka', 'Xai','Cody']
+print(union(list1,list2))
+
 
 
 
