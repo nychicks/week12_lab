@@ -40,10 +40,6 @@ def FindWordCount(word_list, word_to_find):
 # a = str(input('Word>'))
 # FindWordCount('', a)
 
-def scorefinder(list1,list2,string):
-    print(list1,list2,string)
-
-scorefinder(['mike','jill','amy'], [2,3,4,4,5,5], '')
 
 
 def union(list1,list2):
@@ -53,6 +49,16 @@ def union(list1,list2):
 list1 = [5,8,10,6,4]
 list2 = ['Melvin','Martian','Baka', 'Xai','Cody']
 print(union(list1,list2))
+
+
+def intersection(list3,list4):
+    list5 = [value for value in list3 if value in list4]
+    return list5
+
+
+list3 = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+list4 = ['Melvin','Martian','Baka', 'Xai','Cody']
+print(intersection(list3,list4))
 
 
 
