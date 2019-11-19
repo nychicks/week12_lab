@@ -61,6 +61,16 @@ list4 = ['Melvin','Martian','Baka', 'Xai','Cody']
 print(intersection(list3,list4))
 
 
+def notin(list4,list3):
+    list8 = list(set(list4) - set(list3))
+    return list8
+
+
+print(notin(list4,list3))
+
+
+
+
 
 
 
